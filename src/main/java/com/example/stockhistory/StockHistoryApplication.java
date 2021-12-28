@@ -6,7 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class StockHistoryApplication {
+public class StockHistoryApplication  {
+
+    String line = "";
 
     public static void main(String[] args) {
         SpringApplication.run(StockHistoryApplication.class, args);
@@ -16,5 +18,8 @@ public class StockHistoryApplication {
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
+
+
+
 
 }
